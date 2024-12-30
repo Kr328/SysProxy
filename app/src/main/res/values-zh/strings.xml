@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SysProxy</string>
+    <string name="enable">启用</string>
+    <string name="enable_summary_unknown">未知系统代理状态。</string>
+    <string name="enable_summary_disabled">系统代理已禁用。</string>
+    <string name="enable_summary_enabled">系统正使用 %1$s 作为全局系统代理。</string>
+    <string name="shizuku_state">Shizuku 状态</string>
+    <string name="shizuku_state_unavailable">Shizuku 不可用</string>
+    <string name="shizuku_state_no_root">Shizuku 不作为 Root 用户运行。</string>
+    <string name="shizuku_state_no_permission">Shizuku 未授予权限。</string>
+    <string name="shizuku_state_ready">Shizuku 准备就绪。</string>
+    <string name="proxy_uri">代理 Uri</string>
+    <string name="proxy_uri_summary">使用代理 %1$s 用于设置系统代理。</string>
+    <string name="exclude_list">排除列表</string>
+    <string name="exclude_list_summary">排除 %1$d 个主机使用系统代理。</string>
+    <string name="toast_invalid_proxy_uri">无效的代理 Uri</string>
+    <string name="toast_invalid_exclude_list">无效的排除列表</string>
+</resources>

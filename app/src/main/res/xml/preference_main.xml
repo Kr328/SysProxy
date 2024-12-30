@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="enable"
+        android:title="@string/enable"
+        android:persistent="false" />
+
+    <Preference
+        android:key="shizuku_state"
+        android:title="@string/shizuku_state"
+        android:persistent="false" />
+
+    <EditTextPreference
+        android:key="proxy_uri"
+        android:title="@string/proxy_uri"
+        android:defaultValue="@string/default_proxy_uri" />
+
+    <EditTextPreference
+        android:key="exclude_list"
+        android:title="@string/exclude_list"
+        android:defaultValue="@string/default_exclude_list" />
+</PreferenceScreen>

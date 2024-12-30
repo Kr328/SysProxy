@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SysProxy</string>
+
+    <string name="enable">Enable</string>
+    <string name="enable_summary_unknown">Unknown system proxy state.</string>
+    <string name="enable_summary_disabled">System proxy disabled.</string>
+    <string name="enable_summary_enabled">System now using %1$s as global proxy.</string>
+
+    <string name="shizuku_state">Shizuku Status</string>
+    <string name="shizuku_state_unavailable">Shizuku unavailable.</string>
+    <string name="shizuku_state_no_root">Shizuku not running as root.</string>
+    <string name="shizuku_state_no_permission">Shizuku not granted permission.</string>
+    <string name="shizuku_state_ready">Shizuku ready.</string>
+
+    <string name="proxy_uri">Proxy Uri</string>
+    <string name="proxy_uri_summary">Use proxy %1$s to set system proxy.</string>
+
+    <string name="exclude_list">Exclude List</string>
+    <string name="exclude_list_summary">Exclude %1$d hosts from system proxy.</string>
+
+    <string name="toast_invalid_proxy_uri">Invalid Proxy Uri</string>
+    <string name="toast_invalid_exclude_list">Invalid Exclude List</string>
+
+    <string name="default_proxy_uri" translatable="false">http://localhost:7890</string>
+    <string name="default_exclude_list" translatable="false">localhost,127.0.0.1</string>
+</resources>
