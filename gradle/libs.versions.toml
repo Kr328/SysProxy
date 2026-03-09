@@ -1,7 +1,6 @@
 [versions]
 agp = "9.1.0"
 shizuku = "13.1.5"
-lspass = "6.1"
 
 [libraries]
 shizuku-api = { group = "dev.rikka.shizuku", name = "api", version.ref = "shizuku" }
