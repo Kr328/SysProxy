@@ -7,7 +7,7 @@ public interface IConnectivityManager extends IInterface {
     void setGlobalProxy(ProxyInfo proxyInfo) throws android.os.RemoteException;
 
     abstract class Stub extends android.os.Binder implements IConnectivityManager {
-        public static IConnectivityManager asInterface(android.os.IBinder obj) {
+        public static IConnectivityManager asInterface(final android.os.IBinder obj) {
             throw new RuntimeException("Stub!");
         }
     }

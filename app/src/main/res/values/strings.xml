@@ -8,8 +8,8 @@
 
     <string name="shizuku_state">Shizuku Status</string>
     <string name="shizuku_state_unavailable">Shizuku unavailable.</string>
-    <string name="shizuku_state_no_root">Shizuku not running as root.</string>
     <string name="shizuku_state_no_permission">Shizuku not granted permission.</string>
+    <string name="shizuku_state_starting">Shizuku starting...</string>
     <string name="shizuku_state_ready">Shizuku ready.</string>
 
     <string name="proxy_uri">Proxy Uri</string>

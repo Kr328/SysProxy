@@ -9,7 +9,7 @@ public final class ProxyUtils {
 
     private static final Pattern EXCLLIST_PATTERN = Pattern.compile(EXCLLIST_REGEXP);
 
-    public static boolean isValidExcludeList(String excludeList) {
+    public static boolean isValidExcludeList(final String excludeList) {
         return EXCLLIST_PATTERN.matcher(excludeList).matches();
     }
 }

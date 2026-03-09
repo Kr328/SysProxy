@@ -1,12 +1,11 @@
 [versions]
-agp = "8.7.3"
+agp = "9.1.0"
 shizuku = "13.1.5"
-lspass = "4.3"
+lspass = "6.1"
 
 [libraries]
 shizuku-api = { group = "dev.rikka.shizuku", name = "api", version.ref = "shizuku" }
 shizuku-provider = { group = "dev.rikka.shizuku", name = "provider", version.ref = "shizuku" }
-lspass-hiddenapibypass = { group = "org.lsposed.hiddenapibypass", name = "hiddenapibypass", version.ref = "lspass" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

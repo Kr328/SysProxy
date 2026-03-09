@@ -7,8 +7,8 @@
     <string name="enable_summary_enabled">系统正使用 %1$s 作为全局系统代理。</string>
     <string name="shizuku_state">Shizuku 状态</string>
     <string name="shizuku_state_unavailable">Shizuku 不可用</string>
-    <string name="shizuku_state_no_root">Shizuku 不作为 Root 用户运行。</string>
     <string name="shizuku_state_no_permission">Shizuku 未授予权限。</string>
+    <string name="shizuku_state_starting">Shizuku 正在启动…</string>
     <string name="shizuku_state_ready">Shizuku 准备就绪。</string>
     <string name="proxy_uri">代理 Uri</string>
     <string name="proxy_uri_summary">使用代理 %1$s 用于设置系统代理。</string>

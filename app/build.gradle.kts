@@ -2,16 +2,21 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+base {
+    archivesName = "sysproxy"
+}
+
 android {
     namespace = "com.github.kr328.sysproxy"
-    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.github.kr328.sysproxy"
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 10200
+        versionName = "1.2.0"
+    }
 
-        setProperty("archivesBaseName", "sysproxy")
+    buildFeatures {
+        aidl = true
     }
 
     buildTypes {
@@ -40,5 +45,4 @@ dependencies {
 
     implementation(libs.shizuku.api)
     implementation(libs.shizuku.provider)
-    implementation(libs.lspass.hiddenapibypass)
 }
