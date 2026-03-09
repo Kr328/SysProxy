@@ -1,8 +1,6 @@
 # SysProxy
 
-A tiny app to set system proxy on Android. (Root & [Shizuku](https://shizuku.rikka.app) required)
-
-NOTE: If you need a non-root solution, see also [android-proxy-toggle](https://github.com/theappbusiness/android-proxy-toggle.git).
+A tiny app to set system proxy on Android. ([Shizuku](https://shizuku.rikka.app) required).
 
 ## Features
 
