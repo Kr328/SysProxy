@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
                     .setOnPreferenceClickListener(preference -> {
                         final ShizukuHelper.State shizukuState = shizukuHelper.getState();
                         if (shizukuState instanceof ShizukuHelper.State.Unavailable) {
-                            shizukuHelper.startShizukuHomePage();
+                            shizukuHelper.startShizukuApp();
                         } else if (shizukuState instanceof ShizukuHelper.State.Ready || shizukuState instanceof ShizukuHelper.State.Starting) {
                             shizukuHelper.startShizukuApp();
                         } else if (shizukuState instanceof ShizukuHelper.State.NoPermission) {
@@ -133,16 +133,18 @@ public class MainActivity extends Activity {
             } catch (final Throwable e) {
                 Log.w("MainActivity", "Failed to set system proxy", e);
 
-                Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), e.toString(), Toast.LENGTH_LONG).show();
             }
         }
 
         private void toggleEnable(final boolean enable) {
-            if (enable) {
-                setSystemProxy(getProxyUri());
-            } else {
-                setSystemProxy(null);
-            }
+            new Thread(() -> {
+                if (enable) {
+                    setSystemProxy(getProxyUri());
+                } else {
+                    setSystemProxy(null);
+                }
+            }).start();
         }
 
         @Override

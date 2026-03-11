@@ -46,17 +46,15 @@ public final class ShizukuHelper implements ServiceConnection {
 
     public void startShizukuApp() {
         try {
-            context.startActivity(context.getPackageManager().getLaunchIntentForPackage("moe.shizuku.privileged.api"));
-        } catch (final Exception ignored) {
-        }
+            final Intent shizukuIntent = context.getPackageManager().getLaunchIntentForPackage("moe.shizuku.privileged.api");
+            if (shizukuIntent == null) {
+                context.startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://shizuku.rikka.app/")));
+            } else {
+                context.startActivity(context.getPackageManager().getLaunchIntentForPackage("moe.shizuku.privileged.api"));
+            }
+        } catch (final Exception ignored) {}
     }
 
-    public void startShizukuHomePage() {
-        try {
-            context.startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://shizuku.rikka.app/")));
-        } catch (final Exception ignored) {
-        }
-    }
 
     public void onDetach() {
         Shizuku.unbindUserService(
