@@ -21,3 +21,11 @@
 #-renamesourcefileattribute SourceFile
 
 -dontobfuscate
+
+-renamesourcefileattribute Source
+-keepattributes SourceFile
+
+-keep,allowoptimization class com.github.kr328.sysproxy.ShizukuRemote {
+    public <init>();
+    public <methods>;
+}

@@ -11,8 +11,8 @@ android {
 
     defaultConfig {
         applicationId = "com.github.kr328.sysproxy"
-        versionCode = 10200
-        versionName = "1.2.0"
+        versionCode = 10201
+        versionName = "1.2.1"
     }
 
     buildFeatures {
